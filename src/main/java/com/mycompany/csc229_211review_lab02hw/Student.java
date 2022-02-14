@@ -1,16 +1,34 @@
 package com.mycompany.csc229_211review_lab02hw;
 
-/**
- *
- * @author MoaathAlrajab
- */
-public class Student {
-	// ToDo 1: Make this class a child of Person
-	
-	// ToDo 2: Fix the resulting errors
-	
-	// ToDo 3: Add a field for GPA and create setter and getter
-	
-	// ToDo 4: Add comments to your code
+    public class Student extends Person {
+      String name;
+        int gpa = 0;
+
+    Student(String name, int gpa) {
+       this.name = name;
+       this.gpa = gpa;
+    }
+        Student() {
+       this.name = "";
+       this.gpa = 0;
+    } 
+       //get gpa
+    public int getGpa() {
+        return gpa;
+    }
+       //set gpa
+    public void setGpa(int gpa) {
+        this.gpa = gpa;
+    }
+    
+    
+    @Override
+    public String getAddress() {return this.address;
+    }
+
+    @Override
+    public void setAddress(String address) {
+            this.address=address;
+    }
 
 }
